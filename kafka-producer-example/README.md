@@ -3,9 +3,11 @@
 This project demonstrates how to send messages to Kafka using Spring Boot. Below is a brief overview of the key classes and their functionality.
 
 Start Zookeeper (only if not already running)
+
 ./zookeeper-server-start.sh ../config/zookeeper.properties
 
 Start Kafka Server (Broker)
+
 ./kafka-server-start.sh ../config/server.properties
 
 ---
@@ -45,12 +47,6 @@ Start Kafka Server (Broker)
   - **sendMessageToTopic**: Sends a string message to Kafka topic `rezatechie-demo-3`.
   - **sendEventsToTopic**: Sends a `Customer` object to Kafka topic `rezatechie2`.
   - Uses `KafkaTemplate` to send messages asynchronously with `CompletableFuture`.
-
----
-
-### Summary
-
-This application allows sending both string messages and customer data to Kafka topics using Spring Boot. The configuration, controller, DTO, and service classes work together to ensure efficient communication with Kafka.
 
 ---
 
